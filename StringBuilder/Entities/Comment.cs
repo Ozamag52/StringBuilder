@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StringBuilder.Entities
+namespace StringBuildr.Entities
 {
     class Comment
     {

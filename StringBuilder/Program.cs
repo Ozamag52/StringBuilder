@@ -1,7 +1,7 @@
 ﻿using System;
-using StringBuilder.Entities;
+using StringBuildr.Entities;
 
-namespace StringBuilder
+namespace StringBuildr
 {
     class Program
     {
@@ -20,6 +20,9 @@ namespace StringBuilder
             P1.AddComment(C2);
             P2.AddComment(C3);
             P2.AddComment(C4);
+
+            Console.WriteLine(P1);
+            Console.WriteLine(P2);
 
         }
     }

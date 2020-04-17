@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace StringBuilder.Entities
+namespace StringBuildr.Entities
 {
     class Post
     {
@@ -35,6 +35,27 @@ namespace StringBuilder.Entities
         {
             Comments.Remove(comment);
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine(Title);
+            sb.Append(Likes);
+            sb.Append(" Likes - ");
+            sb.AppendLine(Date.ToString("dd/MM/yyyy HH:mm:ss"));
+            sb.AppendLine(Title);
+            sb.AppendLine("Comments: ");
+            foreach(Comment c in Comments)
+            {
+                sb.AppendLine(c.Text);
+            }
+
+
+            return sb.ToString();
+        }
+
+
     }
 
    
