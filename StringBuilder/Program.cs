@@ -6,7 +6,7 @@ namespace StringBuilder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
